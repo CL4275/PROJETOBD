@@ -1,8 +1,7 @@
-# Sistema Bancário Simples
 class Banco:
     def __init__(self):
-        self.contas = {}  # Dicionário para armazenar contas bancárias
-        self.historico = {}  # Dicionário para armazenar histórico de transações
+        self.contas = {}  
+        self.historico = {} 
 
     def criar_conta(self, nome, numero_conta, saldo_inicial):
         if numero_conta in self.contas:
@@ -67,10 +66,8 @@ class Banco:
             print(f"- {transacao}")
 
 
-# Demonstração do Sistema Bancário
 banco = Banco()
 
-# Menu interativo
 while True:
     print("\n--- Sistema Bancário ---")
     print("1. Criar Conta")
